@@ -1,0 +1,61 @@
+To accomplish the tasks you've outlined, you can follow these steps. First, create a `zoo.py` file with the `hours()` function defined as described:
+
+1. Create a `zoo.py` file with the following content:
+
+```python
+# zoo.py
+
+def hours():
+    print('Open 9-5 daily')
+```
+
+Now, let's proceed with the tasks:
+
+2. In the interactive interpreter, import the `zoo` module as `menagerie` and call its `hours()` function:
+
+```python
+import zoo as menagerie
+menagerie.hours()
+```
+
+3. Using the interpreter, explicitly import and call the `hours()` function from `zoo`:
+
+```python
+from zoo import hours
+hours()
+```
+
+4. Import the `hours()` function as `info` and call it:
+
+```python
+from zoo import hours as info
+info()
+```
+
+5. Create a plain dictionary with the key-value pairs 'a': 1, 'b': 2, and 'c': 3, and print it out:
+
+```python
+plain_dict = {'a': 1, 'b': 2, 'c': 3}
+print(plain_dict)
+```
+
+6. Make an `OrderedDict` called `fancy` from the same pairs listed in task 5 and print it. The `OrderedDict` will maintain the order of insertion:
+
+```python
+from collections import OrderedDict
+
+fancy = OrderedDict([('a', 1), ('b', 2), ('c', 3)])
+print(fancy)
+```
+
+7. Make a default dictionary called `dict_of_lists` and pass it the argument `list`. Make the list `dict_of_lists['a']` and append the value 'something for a' to it in one assignment. Print `dict_of_lists['a']`:
+
+```python
+from collections import defaultdict
+
+dict_of_lists = defaultdict(list)
+dict_of_lists['a'].append('something for a')
+print(dict_of_lists['a'])
+```
+
+Now, you've completed all the tasks.
